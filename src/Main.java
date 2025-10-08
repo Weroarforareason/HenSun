@@ -7,5 +7,6 @@ public class Main {
             }
         }
         System.out.println("Blastoff!");
+        System.out.println("Unfortunately, the rocket crashed(really, this is just a troupe for me to mess around with commits.");
     }
 }
