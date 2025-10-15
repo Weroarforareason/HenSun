@@ -1,19 +1,29 @@
 import java.util.Scanner;
-public class Vars {
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("enter your name");
-        String myName = input.nextLine();
-        System.out.println("enter your age");
-        String myAge = input.nextLine();
-        System.out.println("enter your house address");
-        String myHouseAddress = input.nextLine();
-        System.out.println("enter your current school/job");
-        String mySchoolOrJob = input.nextLine();
-        System.out.println("enter your nickname");
-        String myNickname = input.nextLine();
-        System.out.println("enter your earnings in dollars, if none, enter 0");
-        String mySalary = input.nextLine();
-        System.out.println("Hello, my name is "+myName+". I am "+myAge+" years old. I live at "+myHouseAddress+". My nickname is "+myNickname+" I go to school or work at "+mySchoolOrJob+", Where I earn "+mySalary+" dollars.");
+public class Vars{
+    Scanner scanner=new Scanner(System.in);
+            String name;
+    int age;
+    String hobby;
+    public int getAge() {
+        System.out.println("Input age.");
+        return scanner.nextInt();
+    }
+
+    public String getHobby() {
+        System.out.println("Input hobby.");
+        return scanner.nextLine();
+    }
+    public String getName() {
+        System.out.println("Input Name.");
+        return scanner.nextLine();
+    }
+
+    public Vars(){
+        this.age=getAge();
+        this.hobby=getHobby();
+        this.name=getName();
+    }
+    public String toString(){
+        return this.name+", a bright "+this.age+" year old, who likes to "+this.hobby;
     }
 }
