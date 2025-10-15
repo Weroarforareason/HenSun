@@ -4,7 +4,7 @@ public class MeVars{
             String name;
     int age;
     String hobby;
-    public int getAge(){
+    public int getAge() {
         System.out.println("Input age.");
         return scanner.nextInt();
     }
